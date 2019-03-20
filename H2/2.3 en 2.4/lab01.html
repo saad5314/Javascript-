@@ -1,0 +1,33 @@
+<script>
+    // Variables gebruikt voor script
+    var naam = prompt("Voer je eigen naam in");
+    var aantal = parseInt(prompt("Aantal boeken te bestellen?"));
+    var titel = "javascript";
+    var prijs = 29.90;
+    document.write("<br>Bedankt voor je bestelling: " + naam);
+    document.write("<br>Boektitel is: " + titel);
+    document.write("<br>Aantal te bestellen : " + aantal);
+    document.write("<br>Prijs per boek is : " + prijs.toFixed(2));
+          bedrag = aantal * prijs;
+    document.write("<br>Bedrag is :  " + bedrag.toFixed(2));
+          btw = bedrag*0.19;
+    document.write("<br>BTW is : " + btw.toFixed(2));
+          totaal = bedrag + btw;
+    document.write("<br>Totaal inclusief BTW is : " + totaal.toFixed(2));
+  </script>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta http-equiv="content-type"
+						content="text/html";
+						charset="utf-8">
+	<title>Datatypes</title>
+</head>
+<body>
+	<script>
+	var naam = "Carl";
+	var adres = "Kruislaan 111";
+	document.write(
+		"<br />Opgave 10: Datatype van naam is: "+
+		typeof naam);
+	</script>
