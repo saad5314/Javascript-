@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta http-equiv="content-type"
+						content="text/html";
+						charset="utf-8">
+	<title>Array methodes</title>
+</head>
+<body>
+	<script>
+        var studenten = new Array(
+            'Zakaria', 'Albert', 'Hamza', 'Mike', 'Pieter');
+            document.write('<br>Opgave 24: Studenten: '+ studenten);
+
+            document.write("<br>");
+
+            team = studenten;
+            document.write("<br>opgave 25: team: " + team);
+
+            document.write("<br>");
+
+            team[0] = 'Umut';
+            document.write( '<br /> Opgave 26: Element [0] is gewijzigd: '+ studenten);
+
+            document.write("<br>");
+
+            studenten.shift();
+            document.write(
+                '<br /> Opgave 27: Resultaat van shift: '+studenten);
+            
+            document.write("<br>");
+
+            studenten.unshift('Jozef','Umut');
+            document.write("<br>opgave 28: Resultaat van inshift: " + studenten);
+
+            document.write("<br>");
+
+            studenten.pop();
+            document.write("<br>opgave 29: resultaat van pop: " + studenten);
+
+            document.write("<br>");
+
+            studenten.push('Pieter', 'David');
+            document.write('<br /> Opgave 30: Resultaat van push '+ studenten);
+
+            document.write("<br>"); 
+
+            klas= studenten.splice(2,4);
+            document.write('<br /> Opgave 31: Resultaat<br>Studenten: '+studenten+'<br>klas:'+klas);
+            
+            document.write("<br>");
+
+            studenten.sort();
+            document.write("<br> Opgave 32: Resultaat van sort: " + studenten)
+
+            document.write("<br>");
+
+            studenten.reverse();
+            document.write("<br> Opgave 33: Resultaat van reverse: " + klas);
+
+            document.write("<br>");
+
+            index = studenten.indexOf("Jozef");
+            document.write("<br>opgave 34: resultaat van indexof: " + index);
+
+            document.write("<br>");
+
+            delete klas [2];
+            document.write('<br /> Opgave 35: Resultaat van delete: '+klas);
+
+            document.write("<br>");
+
+            document.write("<br>opgave 36: datatype van gedelete element is: " + typeof klas[2]);
+
+            document.write("<br>");
+
+            klas.splice(2.1);
+            document.write("<br>opgave 37: element volledig verwijderd:" + klas);
+
+            document.write("<br>");
+
+            index = studenten.indexOf('Jozef');
+            studenten.splice(index,1);
+            document.write('<br /> Opgave 38: Specifieke student verwijderd: '+ studenten);
+
+            document.write("<br>");
+
+            klas2 = klas.slice();
+            document.write( '<br /> Opgave 39: Resultaat van kopieren: '+ klas2);
+
+            document.write("<br>");
+            document.write("<br>");
+
+            var myString = klas.join("|");
+            document.write("Opgave 40: Resultaat van join: " + myString);
+
+            document.write("<br>");
+
+            var myArray = myString.split('|');
+            document.write( '<br /> Opgave 41: Resultaat van split: '+ myArray );
+    </script> 
+</body>
+</html>
